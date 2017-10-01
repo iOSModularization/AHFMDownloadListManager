@@ -1,0 +1,45 @@
+{
+  "name": "AHFMDownloadListManager",
+  "version": "0.1.0",
+  "summary": "A short description of AHFMDownloadListManager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/iOSModularization/AHFMDownloadListManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "ivsall2012": "ivsall2012@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/iOSModularization/AHFMDownloadListManager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AHFMDownloadListManager/Classes/**/*",
+  "dependencies": {
+    "AHFMDownloadListServices": [
+
+    ],
+    "AHServiceRouter": [
+
+    ],
+    "AHFMModuleManager": [
+
+    ],
+    "AHFMNetworking": [
+
+    ],
+    "AHFMDataCenter": [
+
+    ],
+    "AHFMDataTransformers": [
+
+    ],
+    "SwiftyJSON": [
+
+    ]
+  }
+}

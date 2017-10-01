@@ -1,0 +1,6 @@
+framework module Pods_AHFMDownloadListManager_Example {
+  umbrella header "Pods-AHFMDownloadListManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
