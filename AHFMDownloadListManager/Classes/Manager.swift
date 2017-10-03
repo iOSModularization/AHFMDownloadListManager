@@ -11,6 +11,8 @@ import AHFMNetworking
 import AHFMDataCenter
 import SwiftyJSON
 import AHFMDataTransformers
+import AHServiceRouter
+import AHFMDownloadCenterServices
 
 class Manager: NSObject {
     lazy var networking = AHFMNetworking()
@@ -22,7 +24,14 @@ class Manager: NSObject {
     
     
     func downloadListVCDidTapNavBarRightButton(_ vc: UIViewController){
+        var type: AHServiceNavigationType
+        if vc.navigationController != nil {
+            type = .push(navVC: vc.navigationController!)
+        }else{
+            type = .presentWithNavVC(currentVC: vc)
+        }
         
+        AHServiceRouter.navigateVC(AHFMDownloadCenterServices.service, taskName: AHFMDownloadCenterServices.taskNavigation, userInfo: [:], type: type, completion: nil)
     }
     
     // info [url: fileSize]

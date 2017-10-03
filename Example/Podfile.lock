@@ -5,9 +5,12 @@ PODS:
     - UIDeviceExtension
   - AHFMDataTransformers (0.1.0):
     - SwiftyJSON
+  - AHFMDownloadCenterServices (0.1.0):
+    - AHFMServices
   - AHFMDownloadListManager (0.1.0):
     - AHFMDataCenter
     - AHFMDataTransformers
+    - AHFMDownloadCenterServices
     - AHFMDownloadListServices
     - AHFMModuleManager
     - AHFMNetworking
@@ -38,7 +41,8 @@ SPEC CHECKSUMS:
   AHDataModel: 7b7b1eb705740862fecce8413008ed137dc2c8d2
   AHFMDataCenter: 1ed58c19944bb34ba1ad83c20f2e1c01d4f7291f
   AHFMDataTransformers: eafcb87a307fbd52ccd61917fa5de1aff6a7bd53
-  AHFMDownloadListManager: 9e51ab1bcfb5b09de984ae7c1d0f768225a6d5b9
+  AHFMDownloadCenterServices: 23cf7d1977796512206391c344b8b1e95d1e3b05
+  AHFMDownloadListManager: ef17e3bd564bbd1d6e437ba2007c6fa5e48fb75f
   AHFMDownloadListServices: 5409157c9dfe981f7f88027672d217ba505ed9ba
   AHFMModuleManager: 301c8a5945a301528d5cba55e4809428ef896141
   AHFMNetworking: b2e70aaf377edc0201300e885577563b4cf7fc28
