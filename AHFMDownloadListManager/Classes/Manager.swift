@@ -147,6 +147,7 @@ class Manager: NSObject {
         if let info = info {
             infoDict["fileSize"] = info.fileSize
             infoDict["isDownloaded"] = info.isDownloaded
+            infoDict["downloadedProgress"] = info.downloadedProgress
         }
         
         return infoDict
