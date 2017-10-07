@@ -79,7 +79,7 @@ class Manager: NSObject {
             return
         }
         
-        let eps = AHFMEpisode.query("showId", "=", showId).run()
+        let eps = AHFMEpisode.query("showId", "=", showId).OrderBy("createdAt", isASC: false).run()
         if eps.count > 0 {
             let arr = processEpisodes(eps)
             vc.perform(Selector(("reload:")), with: arr)
@@ -91,7 +91,17 @@ class Manager: NSObject {
                 if arr == nil {
                     vc.perform(Selector(("reload:")), with: nil)
                 }else{
-                    vc.perform(Selector(("reload:")), with: arr)
+                    AHFMEpisode.write {
+                        let eps = AHFMEpisode.query("showId", "=", showId).OrderBy("createdAt", isASC: false).run()
+                        if eps.count > 0 {
+                            let arr = self.processEpisodes(eps)
+                            DispatchQueue.main.async {
+                                vc.perform(Selector(("reload:")), with: arr)
+                            }
+                        }
+                    }
+                    
+                    
                 }
             })
         }
