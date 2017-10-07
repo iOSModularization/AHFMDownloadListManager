@@ -13,6 +13,8 @@ import SwiftyJSON
 import AHFMDataTransformers
 import AHServiceRouter
 import AHFMDownloadCenterServices
+import AHFMBottomPlayerServices
+
 
 class Manager: NSObject {
     lazy var networking = AHFMNetworking()
@@ -24,7 +26,7 @@ class Manager: NSObject {
     
     
     func viewWillAppear(_ vc: UIViewController){
-        let dict: [String: Any] = [AHFMBottomPlayerServices.keyShowPlayer: false, AHFMBottomPlayerServices.keyParentVC: showVC]
+        let dict: [String: Any] = [AHFMBottomPlayerServices.keyShowPlayer: false, AHFMBottomPlayerServices.keyParentVC: vc]
         AHServiceRouter.doTask(AHFMBottomPlayerServices.service, taskName: AHFMBottomPlayerServices.taskDisplayPlayer, userInfo: dict, completion: nil)
     }
     
