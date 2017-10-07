@@ -23,6 +23,16 @@ class Manager: NSObject {
     }
     
     
+    func viewWillAppear(_ vc: UIViewController){
+        let dict: [String: Any] = [AHFMBottomPlayerServices.keyShowPlayer: false, AHFMBottomPlayerServices.keyParentVC: showVC]
+        AHServiceRouter.doTask(AHFMBottomPlayerServices.service, taskName: AHFMBottomPlayerServices.taskDisplayPlayer, userInfo: dict, completion: nil)
+    }
+    
+    func viewWillDisappear(_ vc: UIViewController){
+        
+    }
+    
+    
     func downloadListVCDidTapNavBarRightButton(_ vc: UIViewController){
         var type: AHServiceNavigationType
         if vc.navigationController != nil {

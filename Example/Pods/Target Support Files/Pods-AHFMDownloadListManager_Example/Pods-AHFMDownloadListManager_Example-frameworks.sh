@@ -99,6 +99,7 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AHDataModel/AHDataModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AHFMBottomPlayerServices/AHFMBottomPlayerServices.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AHFMDataCenter/AHFMDataCenter.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AHFMDataTransformers/AHFMDataTransformers.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AHFMDownloadCenterServices/AHFMDownloadCenterServices.framework"
@@ -115,6 +116,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/AHDataModel/AHDataModel.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/AHFMBottomPlayerServices/AHFMBottomPlayerServices.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AHFMDataCenter/AHFMDataCenter.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AHFMDataTransformers/AHFMDataTransformers.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/AHFMDownloadCenterServices/AHFMDownloadCenterServices.framework"

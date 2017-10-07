@@ -353,6 +353,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AHFMDownloadListManager_Example/Pods-AHFMDownloadListManager_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AHDataModel/AHDataModel.framework",
+				"${BUILT_PRODUCTS_DIR}/AHFMBottomPlayerServices/AHFMBottomPlayerServices.framework",
 				"${BUILT_PRODUCTS_DIR}/AHFMDataCenter/AHFMDataCenter.framework",
 				"${BUILT_PRODUCTS_DIR}/AHFMDataTransformers/AHFMDataTransformers.framework",
 				"${BUILT_PRODUCTS_DIR}/AHFMDownloadCenterServices/AHFMDownloadCenterServices.framework",
@@ -370,6 +371,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHDataModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMBottomPlayerServices.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMDataCenter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMDataTransformers.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AHFMDownloadCenterServices.framework",
